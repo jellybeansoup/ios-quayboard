@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A110216616FAD62400051A91 /* keyBackgroundPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215616FAD62400051A91 /* keyBackgroundPad.png */; };
+		A110216716FAD62400051A91 /* keyBackgroundPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215716FAD62400051A91 /* keyBackgroundPad@2x.png */; };
+		A110216816FAD62400051A91 /* keyBackgroundPadHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215816FAD62400051A91 /* keyBackgroundPadHighlighted.png */; };
+		A110216916FAD62400051A91 /* keyBackgroundPadHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215916FAD62400051A91 /* keyBackgroundPadHighlighted@2x.png */; };
+		A110216A16FAD62400051A91 /* keyBackgroundPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215A16FAD62400051A91 /* keyBackgroundPhone.png */; };
+		A110216B16FAD62400051A91 /* keyBackgroundPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215B16FAD62400051A91 /* keyBackgroundPhone@2x.png */; };
+		A110216C16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215C16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter.png */; };
+		A110216D16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215D16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter@2x.png */; };
+		A110216E16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215E16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft.png */; };
+		A110216F16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215F16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft@2x.png */; };
+		A110217016FAD62400051A91 /* keyBackgroundPhoneHighlightRight.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216016FAD62400051A91 /* keyBackgroundPhoneHighlightRight.png */; };
+		A110217116FAD62400051A91 /* keyBackgroundPhoneHighlightRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216116FAD62400051A91 /* keyBackgroundPhoneHighlightRight@2x.png */; };
+		A110217216FAD62400051A91 /* keyboardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216216FAD62400051A91 /* keyboardBackground.png */; };
+		A110217316FAD62400051A91 /* keyboardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216316FAD62400051A91 /* keyboardBackground@2x.png */; };
+		A110217416FAD62400051A91 /* keyboardBackgroundPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216416FAD62400051A91 /* keyboardBackgroundPad.png */; };
+		A110217516FAD62400051A91 /* keyboardBackgroundPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216516FAD62400051A91 /* keyboardBackgroundPad@2x.png */; };
+		A183292B16FA992C00C515B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183292A16FA992C00C515B6 /* SenTestingKit.framework */; };
+		A183292E16FA992C00C515B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291B16FA992C00C515B6 /* Foundation.framework */; };
+		A183298A16FAA0F500C515B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291B16FA992C00C515B6 /* Foundation.framework */; };
+		A183298B16FAA0F500C515B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183298816FAA0D200C515B6 /* UIKit.framework */; };
+		A183299116FAA20600C515B6 /* libQuayboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291816FA992C00C515B6 /* libQuayboard.a */; };
+		A18E9D0116FAAD6000DFC9F4 /* Quayboard_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */; };
+		A1A0BA6516FAB42200093C2F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */; };
+		A1A0BAD516FAC45C00093C2F /* QuayboardTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */; };
+		A1A0BAD816FAC46800093C2F /* QuayboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BAD716FAC46800093C2F /* QuayboardTests.m */; };
+		A1A0BAE216FAC48F00093C2F /* QuayboardResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAE016FAC48F00093C2F /* QuayboardResources-Info.plist */; };
+		A1AA3C1416FAC71300F81C4E /* QuayboardResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */; };
+		A1AA3C1516FAC92600F81C4E /* Quayboard.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0BADD16FAC47500093C2F /* Quayboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1AA3C1616FAC92600F81C4E /* JSMQuayboardBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0BAD916FAC47500093C2F /* JSMQuayboardBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1AA3C1716FAC92600F81C4E /* JSMQuayboardBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BADA16FAC47500093C2F /* JSMQuayboardBar.m */; };
+		A1AA3C1816FAC92600F81C4E /* JSMQuayboardButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0BADB16FAC47500093C2F /* JSMQuayboardButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1AA3C1916FAC92600F81C4E /* JSMQuayboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BADC16FAC47500093C2F /* JSMQuayboardButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A183292F16FA992C00C515B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183291016FA992C00C515B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A183291716FA992C00C515B6;
+			remoteInfo = JSMQuayboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A110215616FAD62400051A91 /* keyBackgroundPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPad.png; path = src/QuayboardResources/Resources/keyBackgroundPad.png; sourceTree = SOURCE_ROOT; };
+		A110215716FAD62400051A91 /* keyBackgroundPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPad@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPad@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110215816FAD62400051A91 /* keyBackgroundPadHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPadHighlighted.png; path = src/QuayboardResources/Resources/keyBackgroundPadHighlighted.png; sourceTree = SOURCE_ROOT; };
+		A110215916FAD62400051A91 /* keyBackgroundPadHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPadHighlighted@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPadHighlighted@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110215A16FAD62400051A91 /* keyBackgroundPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPhone.png; path = src/QuayboardResources/Resources/keyBackgroundPhone.png; sourceTree = SOURCE_ROOT; };
+		A110215B16FAD62400051A91 /* keyBackgroundPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPhone@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPhone@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110215C16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPhoneHighlightCenter.png; path = src/QuayboardResources/Resources/keyBackgroundPhoneHighlightCenter.png; sourceTree = SOURCE_ROOT; };
+		A110215D16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPhoneHighlightCenter@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPhoneHighlightCenter@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110215E16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPhoneHighlightLeft.png; path = src/QuayboardResources/Resources/keyBackgroundPhoneHighlightLeft.png; sourceTree = SOURCE_ROOT; };
+		A110215F16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPhoneHighlightLeft@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPhoneHighlightLeft@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110216016FAD62400051A91 /* keyBackgroundPhoneHighlightRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPhoneHighlightRight.png; path = src/QuayboardResources/Resources/keyBackgroundPhoneHighlightRight.png; sourceTree = SOURCE_ROOT; };
+		A110216116FAD62400051A91 /* keyBackgroundPhoneHighlightRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPhoneHighlightRight@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPhoneHighlightRight@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110216216FAD62400051A91 /* keyboardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboardBackground.png; path = src/QuayboardResources/Resources/keyboardBackground.png; sourceTree = SOURCE_ROOT; };
+		A110216316FAD62400051A91 /* keyboardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboardBackground@2x.png"; path = "src/QuayboardResources/Resources/keyboardBackground@2x.png"; sourceTree = SOURCE_ROOT; };
+		A110216416FAD62400051A91 /* keyboardBackgroundPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboardBackgroundPad.png; path = src/QuayboardResources/Resources/keyboardBackgroundPad.png; sourceTree = SOURCE_ROOT; };
+		A110216516FAD62400051A91 /* keyboardBackgroundPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboardBackgroundPad@2x.png"; path = "src/QuayboardResources/Resources/keyboardBackgroundPad@2x.png"; sourceTree = SOURCE_ROOT; };
+		A183291816FA992C00C515B6 /* libQuayboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuayboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A183291B16FA992C00C515B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JSMQuayboardTests.octest; path = QuayboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A183292A16FA992C00C515B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A183298816FAA0D200C515B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quayboard_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuayboardResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "QuayboardTests-Info.plist"; path = "src/QuayboardTests/QuayboardTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A1A0BAD616FAC46800093C2F /* QuayboardTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuayboardTests.h; path = src/QuayboardTests/QuayboardTests.h; sourceTree = SOURCE_ROOT; };
+		A1A0BAD716FAC46800093C2F /* QuayboardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuayboardTests.m; path = src/QuayboardTests/QuayboardTests.m; sourceTree = SOURCE_ROOT; };
+		A1A0BAD916FAC47500093C2F /* JSMQuayboardBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSMQuayboardBar.h; path = src/Quayboard/JSMQuayboardBar.h; sourceTree = SOURCE_ROOT; };
+		A1A0BADA16FAC47500093C2F /* JSMQuayboardBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSMQuayboardBar.m; path = src/Quayboard/JSMQuayboardBar.m; sourceTree = SOURCE_ROOT; };
+		A1A0BADB16FAC47500093C2F /* JSMQuayboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSMQuayboardButton.h; path = src/Quayboard/JSMQuayboardButton.h; sourceTree = SOURCE_ROOT; };
+		A1A0BADC16FAC47500093C2F /* JSMQuayboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSMQuayboardButton.m; path = src/Quayboard/JSMQuayboardButton.m; sourceTree = SOURCE_ROOT; };
+		A1A0BADD16FAC47500093C2F /* Quayboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Quayboard.h; path = src/Quayboard/Quayboard.h; sourceTree = SOURCE_ROOT; };
+		A1A0BAE016FAC48F00093C2F /* QuayboardResources-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "QuayboardResources-Info.plist"; path = "src/QuayboardResources/QuayboardResources-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A1A0BAE116FAC48F00093C2F /* QuayboardResources-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QuayboardResources-Prefix.pch"; path = "src/QuayboardResources/QuayboardResources-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A183291516FA992C00C515B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A183298A16FAA0F500C515B6 /* Foundation.framework in Frameworks */,
+				A183298B16FAA0F500C515B6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A183292516FA992C00C515B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A183292B16FA992C00C515B6 /* SenTestingKit.framework in Frameworks */,
+				A183292E16FA992C00C515B6 /* Foundation.framework in Frameworks */,
+				A183299116FAA20600C515B6 /* libQuayboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A0BA6016FAB42200093C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A0BA6516FAB42200093C2F /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A183290F16FA992C00C515B6 = {
+			isa = PBXGroup;
+			children = (
+				A183291D16FA992C00C515B6 /* Quayboard */,
+				A183293216FA992C00C515B6 /* QuayboardTests */,
+				A1A0BA6616FAB42200093C2F /* QuayboardResources */,
+				A183291A16FA992C00C515B6 /* Frameworks */,
+				A1A0BAB016FAB4CD00093C2F /* Supporting Files */,
+				A183291916FA992C00C515B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A183291916FA992C00C515B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A183291816FA992C00C515B6 /* libQuayboard.a */,
+				A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */,
+				A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A183291A16FA992C00C515B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A183298816FAA0D200C515B6 /* UIKit.framework */,
+				A183291B16FA992C00C515B6 /* Foundation.framework */,
+				A183292A16FA992C00C515B6 /* SenTestingKit.framework */,
+				A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A183291D16FA992C00C515B6 /* Quayboard */ = {
+			isa = PBXGroup;
+			children = (
+				A1A0BADD16FAC47500093C2F /* Quayboard.h */,
+				A1A0BAD916FAC47500093C2F /* JSMQuayboardBar.h */,
+				A1A0BADA16FAC47500093C2F /* JSMQuayboardBar.m */,
+				A1A0BADB16FAC47500093C2F /* JSMQuayboardButton.h */,
+				A1A0BADC16FAC47500093C2F /* JSMQuayboardButton.m */,
+			);
+			name = Quayboard;
+			path = JSMQuayboard;
+			sourceTree = "<group>";
+		};
+		A183293216FA992C00C515B6 /* QuayboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1A0BAD616FAC46800093C2F /* QuayboardTests.h */,
+				A1A0BAD716FAC46800093C2F /* QuayboardTests.m */,
+				A183293316FA992C00C515B6 /* Supporting Files */,
+			);
+			name = QuayboardTests;
+			path = JSMQuayboardTests;
+			sourceTree = "<group>";
+		};
+		A183293316FA992C00C515B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A18E9D0216FAAD6C00DFC9F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A110215616FAD62400051A91 /* keyBackgroundPad.png */,
+				A110215716FAD62400051A91 /* keyBackgroundPad@2x.png */,
+				A110215816FAD62400051A91 /* keyBackgroundPadHighlighted.png */,
+				A110215916FAD62400051A91 /* keyBackgroundPadHighlighted@2x.png */,
+				A110215A16FAD62400051A91 /* keyBackgroundPhone.png */,
+				A110215B16FAD62400051A91 /* keyBackgroundPhone@2x.png */,
+				A110215C16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter.png */,
+				A110215D16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter@2x.png */,
+				A110215E16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft.png */,
+				A110215F16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft@2x.png */,
+				A110216016FAD62400051A91 /* keyBackgroundPhoneHighlightRight.png */,
+				A110216116FAD62400051A91 /* keyBackgroundPhoneHighlightRight@2x.png */,
+				A110216216FAD62400051A91 /* keyboardBackground.png */,
+				A110216316FAD62400051A91 /* keyboardBackground@2x.png */,
+				A110216416FAD62400051A91 /* keyboardBackgroundPad.png */,
+				A110216516FAD62400051A91 /* keyboardBackgroundPad@2x.png */,
+			);
+			name = Resources;
+			path = src/QuayboardResources/Resources;
+			sourceTree = "<group>";
+		};
+		A1A0BA6616FAB42200093C2F /* QuayboardResources */ = {
+			isa = PBXGroup;
+			children = (
+				A18E9D0216FAAD6C00DFC9F4 /* Resources */,
+				A1A0BA6716FAB42200093C2F /* Supporting Files */,
+			);
+			path = QuayboardResources;
+			sourceTree = "<group>";
+		};
+		A1A0BA6716FAB42200093C2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1A0BAE016FAC48F00093C2F /* QuayboardResources-Info.plist */,
+				A1A0BAE116FAC48F00093C2F /* QuayboardResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1A0BAB016FAB4CD00093C2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A183298416FAA0A900C515B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E9D0116FAAD6000DFC9F4 /* Quayboard_Prefix.pch in Headers */,
+				A1AA3C1516FAC92600F81C4E /* Quayboard.h in Headers */,
+				A1AA3C1616FAC92600F81C4E /* JSMQuayboardBar.h in Headers */,
+				A1AA3C1816FAC92600F81C4E /* JSMQuayboardButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A183291716FA992C00C515B6 /* libQuayboard.a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "libQuayboard.a" */;
+			buildPhases = (
+				A183291416FA992C00C515B6 /* Sources */,
+				A183291516FA992C00C515B6 /* Frameworks */,
+				A183298416FAA0A900C515B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libQuayboard.a;
+			productName = JSMQuayboard;
+			productReference = A183291816FA992C00C515B6 /* libQuayboard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A183292816FA992C00C515B6 /* QuayboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A183294016FA992C00C515B6 /* Build configuration list for PBXNativeTarget "QuayboardTests" */;
+			buildPhases = (
+				A183292416FA992C00C515B6 /* Sources */,
+				A183292516FA992C00C515B6 /* Frameworks */,
+				A183292616FA992C00C515B6 /* Resources */,
+				A183292716FA992C00C515B6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A183293016FA992C00C515B6 /* PBXTargetDependency */,
+			);
+			name = QuayboardTests;
+			productName = JSMQuayboardTests;
+			productReference = A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A1A0BA6216FAB42200093C2F /* QuayboardResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A0BA6D16FAB42200093C2F /* Build configuration list for PBXNativeTarget "QuayboardResources" */;
+			buildPhases = (
+				A1A0BA5F16FAB42200093C2F /* Sources */,
+				A1A0BA6016FAB42200093C2F /* Frameworks */,
+				A1A0BA6116FAB42200093C2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuayboardResources;
+			productName = QuayboardResources;
+			productReference = A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A183291016FA992C00C515B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JSM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "JellyStyle Media";
+			};
+			buildConfigurationList = A183291316FA992C00C515B6 /* Build configuration list for PBXProject "Quayboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A183290F16FA992C00C515B6;
+			productRefGroup = A183291916FA992C00C515B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A183291716FA992C00C515B6 /* libQuayboard.a */,
+				A1A0BA6216FAB42200093C2F /* QuayboardResources */,
+				A183292816FA992C00C515B6 /* QuayboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A183292616FA992C00C515B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A0BAD516FAC45C00093C2F /* QuayboardTests-Info.plist in Resources */,
+				A1A0BAE216FAC48F00093C2F /* QuayboardResources-Info.plist in Resources */,
+				A1AA3C1416FAC71300F81C4E /* QuayboardResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A0BA6116FAB42200093C2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A110216616FAD62400051A91 /* keyBackgroundPad.png in Resources */,
+				A110216716FAD62400051A91 /* keyBackgroundPad@2x.png in Resources */,
+				A110216816FAD62400051A91 /* keyBackgroundPadHighlighted.png in Resources */,
+				A110216916FAD62400051A91 /* keyBackgroundPadHighlighted@2x.png in Resources */,
+				A110216A16FAD62400051A91 /* keyBackgroundPhone.png in Resources */,
+				A110216B16FAD62400051A91 /* keyBackgroundPhone@2x.png in Resources */,
+				A110216C16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter.png in Resources */,
+				A110216D16FAD62400051A91 /* keyBackgroundPhoneHighlightCenter@2x.png in Resources */,
+				A110216E16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft.png in Resources */,
+				A110216F16FAD62400051A91 /* keyBackgroundPhoneHighlightLeft@2x.png in Resources */,
+				A110217016FAD62400051A91 /* keyBackgroundPhoneHighlightRight.png in Resources */,
+				A110217116FAD62400051A91 /* keyBackgroundPhoneHighlightRight@2x.png in Resources */,
+				A110217216FAD62400051A91 /* keyboardBackground.png in Resources */,
+				A110217316FAD62400051A91 /* keyboardBackground@2x.png in Resources */,
+				A110217416FAD62400051A91 /* keyboardBackgroundPad.png in Resources */,
+				A110217516FAD62400051A91 /* keyboardBackgroundPad@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A183292716FA992C00C515B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A183291416FA992C00C515B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AA3C1716FAC92600F81C4E /* JSMQuayboardBar.m in Sources */,
+				A1AA3C1916FAC92600F81C4E /* JSMQuayboardButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A183292416FA992C00C515B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A0BAD816FAC46800093C2F /* QuayboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A0BA5F16FAB42200093C2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A183293016FA992C00C515B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A183291716FA992C00C515B6 /* libQuayboard.a */;
+			targetProxy = A183292F16FA992C00C515B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A183293B16FA992C00C515B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Quayboard_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A183293C16FA992C00C515B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Quayboard_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A183293E16FA992C00C515B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMPRESS_PNG_FILES = YES;
+				DSTROOT = /tmp/JSMQuayboard.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Quayboard;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A183293F16FA992C00C515B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMPRESS_PNG_FILES = YES;
+				DSTROOT = /tmp/JSMQuayboard.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Quayboard;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A183294116FA992C00C515B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSMQuayboard/JSMQuayboard-Prefix.pch";
+				INFOPLIST_FILE = "JSMQuayboardTests/JSMQuayboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A183294216FA992C00C515B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSMQuayboard/JSMQuayboard-Prefix.pch";
+				INFOPLIST_FILE = "JSMQuayboardTests/JSMQuayboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A1A0BA6E16FAB42200093C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuayboardResources/QuayboardResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "src/QuayboardResources/QuayboardResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A1A0BA6F16FAB42200093C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuayboardResources/QuayboardResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "src/QuayboardResources/QuayboardResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A183291316FA992C00C515B6 /* Build configuration list for PBXProject "Quayboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A183293B16FA992C00C515B6 /* Debug */,
+				A183293C16FA992C00C515B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "libQuayboard.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A183293E16FA992C00C515B6 /* Debug */,
+				A183293F16FA992C00C515B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A183294016FA992C00C515B6 /* Build configuration list for PBXNativeTarget "QuayboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A183294116FA992C00C515B6 /* Debug */,
+				A183294216FA992C00C515B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A0BA6D16FAB42200093C2F /* Build configuration list for PBXNativeTarget "QuayboardResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A0BA6E16FAB42200093C2F /* Debug */,
+				A1A0BA6F16FAB42200093C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A183291016FA992C00C515B6 /* Project object */;
+}
