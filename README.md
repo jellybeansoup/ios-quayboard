@@ -2,6 +2,8 @@
 
 A keyboard accessory view that blends in with the default iOS keyboard, providing an additional set of customisable keys.
 
+![Screenshot in iOS Simulator](https://raw.github.com/jellybeansoup/ios-quayboard/master/example/screenshot.png)
+
 ##Installation
 
 There are a couple of ways to include Quayboard in your Xcode project.
