@@ -68,6 +68,8 @@
 		A110216316FAD62400051A91 /* keyboardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboardBackground@2x.png"; path = "src/QuayboardResources/Resources/keyboardBackground@2x.png"; sourceTree = SOURCE_ROOT; };
 		A110216416FAD62400051A91 /* keyboardBackgroundPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboardBackgroundPad.png; path = src/QuayboardResources/Resources/keyboardBackgroundPad.png; sourceTree = SOURCE_ROOT; };
 		A110216516FAD62400051A91 /* keyboardBackgroundPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboardBackgroundPad@2x.png"; path = "src/QuayboardResources/Resources/keyboardBackgroundPad@2x.png"; sourceTree = SOURCE_ROOT; };
+		A128D98617024881008ADB48 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A128D98717024881008ADB48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A183291816FA992C00C515B6 /* libQuayboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuayboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A183291B16FA992C00C515B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JSMQuayboardTests.octest; path = QuayboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,8 @@
 				A183291A16FA992C00C515B6 /* Frameworks */,
 				A1A0BAB016FAB4CD00093C2F /* Supporting Files */,
 				A183291916FA992C00C515B6 /* Products */,
+				A128D98617024881008ADB48 /* LICENSE */,
+				A128D98717024881008ADB48 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};

@@ -30,7 +30,7 @@ Simply add the project to your `Podfile` by adding the line:
 pod 'Quayboard'
 ```
 
-And run `pod update` in terminal to update the pods you have included in your 
+And run `pod update` in terminal to update the pods you have included in your project.
 
 You can also specify a version to include, such as 0.1.0:
 
