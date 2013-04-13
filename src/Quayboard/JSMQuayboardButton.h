@@ -25,12 +25,12 @@
 #import <UIKit/UIKit.h>
 
 @interface JSMQuayboardButton : UIButton {
-	NSString *title;
-	NSString *value;
-	int position;
+	NSString *_title;
+	NSString *_value;
+	int _position;
 @private
-	UILabel *label;
-	UIImageView *imageView;
+	UILabel *_label;
+	UIImageView *_backgroundImageView;
 }
 
 @property (nonatomic, strong) NSString *title;
@@ -38,6 +38,6 @@
 @property (nonatomic) int position;
 
 @property (nonatomic, strong) UILabel *label;
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @end

@@ -33,17 +33,17 @@
 @end
 
 @interface JSMQuayboardBar : UIView {
-	id <JSMQuayboardBarDelegate> delegate;
-	NSArray *keys;
+	__unsafe_unretained id <JSMQuayboardBarDelegate> _delegate;
+	NSArray *_keys;
 }
 
-@property (nonatomic, strong) id <JSMQuayboardBarDelegate> delegate;
+@property (nonatomic, assign) id <JSMQuayboardBarDelegate> delegate;
 @property (nonatomic, strong) NSArray *keys;
 
 - (JSMQuayboardButton *)addKeyWithValue:(NSString *)value;
 - (JSMQuayboardButton *)addKeyWithTitle:(NSString *)title andValue:(NSString *)value;
 - (void)addKey:(JSMQuayboardButton *)key;
 
-+ (UIImage *)__JSMBundledImageNamed:(NSString*)name;
++ (UIImage *)__JSMBundledImageNamed:(NSString *)name;
 
 @end

@@ -27,42 +27,45 @@
 
 @implementation JSMQuayboardButton
 
-@synthesize title;
-@synthesize value;
-@synthesize position;
-@synthesize label;
-@synthesize imageView;
-
 - (id)initWithFrame:(CGRect)frame {
     if( ( self = [super initWithFrame:frame] ) ) {
+
 		// Configure the button
 		self.backgroundColor = UIColor.clearColor;
+
 		// Set up the background image
-		self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-		self.imageView.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
-		[self addSubview:self.imageView];
+		_backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+		_backgroundImageView.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
+		[self addSubview:_backgroundImageView];
+
 		// Set up the text label
-		self.label = [[UILabel alloc] initWithFrame:CGRectZero];
-		self.label.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
-		self.label.backgroundColor = UIColor.clearColor;
-		self.label.shadowColor = UIColor.whiteColor;
-		self.label.shadowOffset = CGSizeMake( 0, 1 );
-		self.label.textAlignment = NSTextAlignmentCenter;
+		_label = [[UILabel alloc] initWithFrame:CGRectZero];
+		_label.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
+		_label.backgroundColor = UIColor.clearColor;
+		_label.shadowColor = UIColor.whiteColor;
+		_label.shadowOffset = CGSizeMake( 0, 1 );
+		_label.textAlignment = NSTextAlignmentCenter;
 		[self addSubview:self.label];
+
 		// Accessibility
 		self.accessibilityTraits = UIAccessibilityTraitKeyboardKey;
+
 		// Set the initial state
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
 			[self displayNormalStatePad];
 		else
 			[self displayNormalStatePhone];
+
     }
     return self;
 }
 
-- (void)setTitle:(NSString *)_title {
-	title = _title;
-	label.text = _title;
+- (NSString *)title {
+	return _label.text;
+}
+
+- (void)setTitle:(NSString *)title {
+	_label.text = title;
 }
 
 #pragma mark -
@@ -72,10 +75,10 @@
 	// Background Image
 	UIImage *image = [JSMQuayboardBar __JSMBundledImageNamed:@"keyBackgroundPhone.png"];
 	if( [image respondsToSelector:@selector(resizableImageWithCapInsets:resizingMode:)] )
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 11, 8, 11, 8 ) resizingMode:UIImageResizingModeStretch];
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 11, 8, 11, 8 ) resizingMode:UIImageResizingModeStretch];
 	else
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 11, 8, 11, 8 )];
-	self.imageView.frame = CGRectMake( -3, -6, self.frame.size.width+6, self.frame.size.height+12 );
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 11, 8, 11, 8 )];
+	_backgroundImageView.frame = CGRectMake( -3, -6, self.frame.size.width+6, self.frame.size.height+12 );
 	// Text Label
 	self.label.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
 	self.label.font = [UIFont boldSystemFontOfSize:20];
@@ -104,10 +107,10 @@
 	// Background Image
 	UIImage *image = [JSMQuayboardBar __JSMBundledImageNamed:imageName];
 	if( [image respondsToSelector:@selector(resizableImageWithCapInsets:resizingMode:)] )
-		self.imageView.image = [image resizableImageWithCapInsets:edgeInsets resizingMode:UIImageResizingModeStretch];
+		_backgroundImageView.image = [image resizableImageWithCapInsets:edgeInsets resizingMode:UIImageResizingModeStretch];
 	else
-		self.imageView.image = [image resizableImageWithCapInsets:edgeInsets];
-	self.imageView.frame = imageFrame;
+		_backgroundImageView.image = [image resizableImageWithCapInsets:edgeInsets];
+	_backgroundImageView.frame = imageFrame;
 	// Text Label
 	self.label.autoresizingMask = ( UIViewAutoresizingFlexibleWidth );
 	self.label.font = [UIFont boldSystemFontOfSize:45];
@@ -118,10 +121,10 @@
 	// Background Image
 	UIImage *image = [JSMQuayboardBar __JSMBundledImageNamed:@"keyBackgroundPad.png"];
 	if( [image respondsToSelector:@selector(resizableImageWithCapInsets:resizingMode:)] )
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 ) resizingMode:UIImageResizingModeStretch];
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 ) resizingMode:UIImageResizingModeStretch];
 	else
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 )];
-	self.imageView.frame = CGRectMake( -6, -6, self.frame.size.width+12, self.frame.size.height+12 );
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 )];
+	_backgroundImageView.frame = CGRectMake( -6, -6, self.frame.size.width+12, self.frame.size.height+12 );
 	// Text Label
 	self.label.autoresizingMask = ( UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth );
 	self.label.font = [UIFont systemFontOfSize:25];
@@ -132,9 +135,9 @@
 	// Background Image
 	UIImage *image = [JSMQuayboardBar __JSMBundledImageNamed:@"keyBackgroundPadHighlighted.png"];
 	if( [image respondsToSelector:@selector(resizableImageWithCapInsets:resizingMode:)] )
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 ) resizingMode:UIImageResizingModeStretch];
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 ) resizingMode:UIImageResizingModeStretch];
 	else
-		self.imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 )];
+		_backgroundImageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsMake( 13, 14, 13, 14 )];
 }
 
 #pragma mark -

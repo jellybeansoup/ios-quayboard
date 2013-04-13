@@ -26,9 +26,6 @@
 
 @implementation JSMQuayboardBar
 
-@synthesize delegate;
-@synthesize keys;
-
 - (id)initWithFrame:(CGRect)frame {
 	// Height is different on each device
 	frame = CGRectMake( frame.origin.x, frame.origin.y, frame.size.width, 44 );
@@ -96,9 +93,9 @@
 	self.keys = array;
 }
 
-- (void)setKeys:(NSArray *)_keys {
+- (void)setKeys:(NSArray *)keys {
 	// Update the keys array
-	keys = _keys;
+	_keys = keys;
 	// Rearrange the keys
 	[self arrangeKeys];
 }
@@ -107,8 +104,8 @@
 #pragma mark Triggered Keys
 
 - (void)keyTouchUpInside:(id)sender {
-	if( delegate != nil && [delegate respondsToSelector:@selector(quayboardBar:keyWasPressed:)] )
-		[delegate quayboardBar:self keyWasPressed:(JSMQuayboardButton *)sender];
+	if( _delegate != nil && [_delegate respondsToSelector:@selector(quayboardBar:keyWasPressed:)] )
+		[_delegate quayboardBar:self keyWasPressed:(JSMQuayboardButton *)sender];
 }
 
 #pragma mark -
