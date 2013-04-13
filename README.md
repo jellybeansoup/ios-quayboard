@@ -73,6 +73,13 @@ You can then implement as many keys as you like. They will be evenly distributed
 [quayboardBar addKeyWithTitle:@"⇥" andValue:@"\t"];
 ```
 
+If you're using a symbol as a title (like with the tab key above), you should consider setting an accessibility value on the key so that sight-impaired users can easily use your Quayboard. Implementing this is super simple and only takes a few moments. Touches like this take very little effort but have big returns for some of your potential users!
+
+```objc
+JSMQuayboardKey *tabKey = [quayboardBar addKeyWithTitle:@"⇥" andValue:@"\t"];
+tabKey.accessibilityValue = @"Tab";
+```
+
 The final step is to implement the delegate method so that the textview is updated as expected. Here's an example (as shown in the example project) for updating a UITextView when a key is pressed:
 
 ```objc

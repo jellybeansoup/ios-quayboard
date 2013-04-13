@@ -48,13 +48,20 @@
 	[textViewAccessory addKeyWithValue:@"5"];
 	
 	// Maybe a key whose labels and values aren't the same
-	[textViewAccessory addKeyWithTitle:@"⇥" andValue:@"\t"];
-
+	JSMQuayboardButton *tabButton = [textViewAccessory addKeyWithTitle:@"⇥" andValue:@"\t"];
+	tabButton.accessibilityValue = tabButton.value;
+	
 	// Or build and add a custom key
 	JSMQuayboardButton *customKey = [[JSMQuayboardButton alloc] initWithFrame:CGRectZero];
 	customKey.title = @"▾";
+	customKey.accessibilityValue = NSLocalizedString(@"Hide Keyboard",@"Accessibility value for key in Quayboard that hides the keyboard.");
 	[customKey addTarget:self action:@selector(clearTextView:) forControlEvents:UIControlEventTouchUpInside];
 	[textViewAccessory addKey:customKey];
+
+	/*
+	 Note that I'm setting a custom accessibility value on the last two keys. Some characters (such as the arrow in this case) are not
+	 pronounceable, so it's important for accessibility that you provide a value that defines the action or value provided by the key.
+	 */
 	
 	// Deal with events and changes
 	[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];

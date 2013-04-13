@@ -49,6 +49,8 @@
 		self.label.shadowOffset = CGSizeMake( 0, 1 );
 		self.label.textAlignment = NSTextAlignmentCenter;
 		[self addSubview:self.label];
+		// Accessibility
+		self.accessibilityTraits = UIAccessibilityTraitKeyboardKey;
 		// Set the initial state
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
 			[self displayNormalStatePad];

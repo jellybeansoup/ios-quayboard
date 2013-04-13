@@ -79,6 +79,8 @@
     key.autoresizingMask = ( UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth );
 	key.title = title;
 	key.value = value;
+	// Set some default accessibility details
+	key.accessibilityValue = title;
 	// Add to the list
 	[self addKey:key];
 	// And return
