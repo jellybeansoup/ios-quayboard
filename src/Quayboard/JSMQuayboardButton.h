@@ -24,6 +24,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * An instance of JSMQuayboardButton represents a key to be used in an instance of JSMQuayboardBar.
+ */
+
 @interface JSMQuayboardButton : UIButton {
 	NSString *_title;
 	NSString *_value;
@@ -33,11 +37,36 @@
 	UIImageView *_backgroundImageView;
 }
 
+/**
+ * The label value for the key.
+ */
+
 @property (nonatomic, strong) NSString *title;
+
+/**
+ * The value of the key when pressed.
+ *
+ * This value is meant to be inserted into the text field or text view when the key is pressed.
+ */
+
 @property (nonatomic, strong) NSString *value;
+
+/**
+ * The position of the key within it's paren quayboard object.
+ */
+
 @property (nonatomic) int position;
 
+/**
+ * The label view that displays the key's title.
+ */
+
 @property (nonatomic, strong) UILabel *label;
+
+/**
+ * The image view used to display the background image.
+ */
+
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @end

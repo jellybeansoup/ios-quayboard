@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1047EBE171946CA00B5A783 /* generate_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_docs.sh; sourceTree = "<group>"; };
 		A110215616FAD62400051A91 /* keyBackgroundPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPad.png; path = src/QuayboardResources/Resources/keyBackgroundPad.png; sourceTree = SOURCE_ROOT; };
 		A110215716FAD62400051A91 /* keyBackgroundPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyBackgroundPad@2x.png"; path = "src/QuayboardResources/Resources/keyBackgroundPad@2x.png"; sourceTree = SOURCE_ROOT; };
 		A110215816FAD62400051A91 /* keyBackgroundPadHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyBackgroundPadHighlighted.png; path = src/QuayboardResources/Resources/keyBackgroundPadHighlighted.png; sourceTree = SOURCE_ROOT; };
@@ -233,6 +234,7 @@
 		A1A0BAB016FAB4CD00093C2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1047EBE171946CA00B5A783 /* generate_docs.sh */,
 				A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -262,6 +264,7 @@
 				A183291416FA992C00C515B6 /* Sources */,
 				A183291516FA992C00C515B6 /* Frameworks */,
 				A183298416FAA0A900C515B6 /* Headers */,
+				A1047EBD1719464100B5A783 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -374,6 +377,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A1047EBD1719464100B5A783 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		A183292716FA992C00C515B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
