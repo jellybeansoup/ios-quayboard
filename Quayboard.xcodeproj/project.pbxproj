@@ -76,6 +76,7 @@
 		A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JSMQuayboardTests.octest; path = QuayboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A183292A16FA992C00C515B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A183298816FAA0D200C515B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1881256171AE2C80024B28F /* Quayboard.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quayboard.podspec; sourceTree = "<group>"; };
 		A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quayboard_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuayboardResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +134,7 @@
 				A183291916FA992C00C515B6 /* Products */,
 				A128D98617024881008ADB48 /* LICENSE */,
 				A128D98717024881008ADB48 /* README.md */,
+				A1881256171AE2C80024B28F /* Quayboard.podspec */,
 			);
 			sourceTree = "<group>";
 		};
