@@ -23,7 +23,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Quayboard/Quayboard.h>
+#import "Quayboard.h"
 
 @interface ViewController : UIViewController <JSMQuayboardBarDelegate, UITextViewDelegate> {
 	UITextView *_textView;

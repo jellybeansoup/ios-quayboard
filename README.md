@@ -14,11 +14,15 @@ This method is demonstrated in the included example project (example/QuayboardEx
 
 1. Drag the `Quayboard.xcodeproj` file into your Project Navigator (⌘1) from the Finder. This should add Quayboard as a subproject of your own project (denoted by the fact that it appears as in a rectangle and you should be able to browse the project structure).
 
-2. In your Project's target, under the Build Phases tab, add `libQuayboard.a` and `QuayboardResources.bundle` under 'Target Dependencies'.
+2. In your Project's target, under the Build Phases tab, add `libQuayboard.a` under 'Link Binary with Libraries'.
 
-3. Expand the Quayboard subproject and drag the `QuayboardResources.bundle` into your 'Copy Bundle Resources' build phase.
+3. While you're in the Build Phases tab, add `libQuayboard.a` and `QuayboardResources.bundle` under 'Target Dependencies'.
 
-4. Build your project (⌘B). All going well you should get a 'Build Succeeded' notification. This signifies that you're ready to implement Quayboard in your project.
+4. Expand the Quayboard subproject and drag the `QuayboardResources.bundle` into your 'Copy Bundle Resources' build phase.
+
+5. Under the Build Settings tab of you Project's target, do a search for 'Header Search Paths'. Add the path to the `/src/Quayboard/` folder of the Quayboard project. This should look something like `"$(SRCROOT)/../src/Quayboard/"`, replaceing the `..` with the relative path from your project to the Quayboard project.
+
+6. Build your project (⌘B). All going well you should get a 'Build Succeeded' notification. This signifies that you're ready to implement Quayboard in your project.
 
 ###Cocoapods
 
@@ -26,7 +30,7 @@ Quayboard can be installed *very* easily if you use [Cocoapods](http://cocoapods
 
 Simply add the project to your `Podfile` by adding the line:
 
-``` 
+```ruby 
 pod 'Quayboard'
 ```
 
@@ -34,7 +38,7 @@ And run `pod update` in terminal to update the pods you have included in your pr
 
 You can also specify a version to include, such as 0.1.0:
 
-``` 
+```ruby
 pod 'Quayboard', '0.1.0'
 ```
 
@@ -45,7 +49,7 @@ For more information on how to add projects using Cocoapods, read [their documen
 At the top of the header file for the view controller you want to implement Quayboard in, include Quayboard:
 
 ```objc
-#import <Quayboard/Quayboard.h>
+#import "Quayboard.h"
 ```
 
 The view controller should also implement `JSMQuayboardBarDelegate` in order to receive notification that a key was pressed.

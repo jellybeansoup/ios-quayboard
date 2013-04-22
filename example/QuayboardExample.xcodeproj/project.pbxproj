@@ -352,9 +352,12 @@
 		A11C05AA16FAA51700C44D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuayboardExample/QuayboardExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/Quayboard/\"";
 				INFOPLIST_FILE = "QuayboardExample/QuayboardExample-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -363,9 +366,12 @@
 		A11C05AB16FAA51700C44D43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuayboardExample/QuayboardExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/Quayboard/\"";
 				INFOPLIST_FILE = "QuayboardExample/QuayboardExample-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
