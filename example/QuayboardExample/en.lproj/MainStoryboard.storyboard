@@ -8,25 +8,22 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <view key="view" contentMode="scaleToFill" id="WFZ-iA-373">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="At8-Kq-v8B">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="1" constant="457" type="user" id="pdt-9B-rgI"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="At8-Kq-v8B" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="FFE-L8-k5a"/>
-                            <constraint firstItem="At8-Kq-v8B" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Jaw-bY-xho"/>
-                            <constraint firstItem="At8-Kq-v8B" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="SQX-QY-u8M"/>
-                            <constraint firstItem="At8-Kq-v8B" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="fu1-YY-8qN"/>
+                            <constraint firstItem="At8-Kq-v8B" firstAttribute="leading" secondItem="WFZ-iA-373" secondAttribute="leading" type="default" id="0le-u4-CHs"/>
+                            <constraint firstItem="At8-Kq-v8B" firstAttribute="bottom" secondItem="WFZ-iA-373" secondAttribute="bottom" type="default" id="S2c-Bv-CMB"/>
+                            <constraint firstItem="At8-Kq-v8B" firstAttribute="trailing" secondItem="WFZ-iA-373" secondAttribute="trailing" type="default" id="YgL-Hk-LI7"/>
+                            <constraint firstItem="At8-Kq-v8B" firstAttribute="top" secondItem="WFZ-iA-373" secondAttribute="top" type="default" id="uQu-qn-dTr"/>
                         </constraints>
                     </view>
                     <connections>

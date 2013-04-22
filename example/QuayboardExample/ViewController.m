@@ -33,12 +33,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	[self.textView becomeFirstResponder];
+	// So the keyboard shows up immediately
+	[_textView becomeFirstResponder];
 
 	// Create the Quayboard bar
 	JSMQuayboardBar *textViewAccessory = [[JSMQuayboardBar alloc] initWithFrame:CGRectZero];
 	textViewAccessory.delegate = self;
-	self.textView.inputAccessoryView = textViewAccessory;
+	_textView.inputAccessoryView = textViewAccessory;
 
 	// Add some keys whose values match their labels
 	[textViewAccessory addKeyWithValue:@"1"];
@@ -59,8 +60,10 @@
 	[textViewAccessory addKey:customKey];
 
 	/*
-	 Note that I'm setting a custom accessibility value on the last two keys. Some characters (such as the arrow in this case) are not
-	 pronounceable, so it's important for accessibility that you provide a value that defines the action or value provided by the key.
+	 Note that I'm setting a custom accessibility value on the last two keys.
+	 Some characters (such as the arrow in this case) are not pronounceable,
+	 so it's important for accessibility that you provide a value that defines
+	 the action or value provided by the key.
 	 */
 	
 	// Deal with events and changes
@@ -72,36 +75,36 @@
 #pragma mark - IBActions
 
 - (IBAction)clearTextView:(id)sender {
-	[self.textView resignFirstResponder];
+	[_textView resignFirstResponder];
 }
 
 #pragma mark - Quayboard Bar Delegate
 
 - (void)quayboardBar:(JSMQuayboardBar *)quayboardBar keyWasPressed:(JSMQuayboardButton *)key {
 	// Find the range of the selected text
-	NSRange range = self.textView.selectedRange;
+	NSRange range = _textView.selectedRange;
 	
 	// Get the relevant strings
-	NSString *firstHalfString = [self.textView.text substringToIndex:range.location];
+	NSString *firstHalfString = [_textView.text substringToIndex:range.location];
 	NSString *insertingString = key.value;
-	NSString *secondHalfString = [self.textView.text substringFromIndex:range.location+range.length];
+	NSString *secondHalfString = [_textView.text substringFromIndex:range.location+range.length];
 	
 	// Update the textView's text
-	self.textView.scrollEnabled = NO;
-	self.textView.text = [NSString stringWithFormat: @"%@%@%@", firstHalfString, insertingString, secondHalfString];
-	self.textView.scrollEnabled = YES;
+	_textView.scrollEnabled = NO;
+	_textView.text = [NSString stringWithFormat: @"%@%@%@", firstHalfString, insertingString, secondHalfString];
+	_textView.scrollEnabled = YES;
 
 	// More the selection to after our inserted text
 	range.location += insertingString.length;
 	range.length = 0;
-	self.textView.selectedRange = range;
+	_textView.selectedRange = range;
 }
 
 #pragma mark - Respond to the keyboard being displayed and hidden
 
 - (void)keyboardWillShow:(NSNotification *)notification {
 	// Get the view's frame
-	CGRect viewFrame = self.textView.frame;
+	CGRect viewFrame = _textView.frame;
 	// Get the keyboard's frame
     NSDictionary *userInfo = notification.userInfo;
     CGRect keyboardFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
@@ -113,28 +116,30 @@
     NSTimeInterval animationDuration;
     [animationDurationValue getValue:&animationDuration];
 	// Animate the resize of the text view's frame in sync with the keyboard's appearance.
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:animationDuration];
-    // Set the values
-    self.textView.frame = viewFrame;
-    // Commit the animation
-	[UIView commitAnimations];
+	[UIView animateWithDuration:animationDuration animations:^{
+		// Set the values
+		_textView.frame = viewFrame;
+	}];
 }
 
 - (void)keyboardWillHide:(NSNotification *)notification {
 	// Adjust the height of the frame
-	CGRect viewFrame = CGRectMake( 0, 0, self.view.frame.size.width, self.view.frame.size.height );
+	CGRect viewFrame = _textView.frame;
+	// Get the keyboard's frame
+    NSDictionary *userInfo = notification.userInfo;
+    CGRect keyboardFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    keyboardFrame = [self.view convertRect:keyboardFrame fromView:nil];
+	// Adjust the height of the frame
+	viewFrame.size.height = viewFrame.size.height + keyboardFrame.size.height;
 	// Get the duration of the animation.
     NSValue *animationDurationValue = [notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
     NSTimeInterval animationDuration;
     [animationDurationValue getValue:&animationDuration];
 	// Animate the resize of the text view's frame in sync with the keyboard's appearance.
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:animationDuration];
-    // Set the values
-    self.textView.frame = viewFrame;
-    // Commit the animation
-	[UIView commitAnimations];
+	[UIView animateWithDuration:animationDuration animations:^{
+		// Set the values
+		_textView.frame = viewFrame;
+	}];
 }
 
 @end
