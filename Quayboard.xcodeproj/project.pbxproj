@@ -29,7 +29,6 @@
 		A183298B16FAA0F500C515B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183298816FAA0D200C515B6 /* UIKit.framework */; };
 		A183299116FAA20600C515B6 /* libQuayboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291816FA992C00C515B6 /* libQuayboard.a */; };
 		A18E9D0116FAAD6000DFC9F4 /* Quayboard_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */; };
-		A1A0BA6516FAB42200093C2F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */; };
 		A1A0BAD516FAC45C00093C2F /* QuayboardTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */; };
 		A1A0BAD816FAC46800093C2F /* QuayboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BAD716FAC46800093C2F /* QuayboardTests.m */; };
 		A1A0BAE216FAC48F00093C2F /* QuayboardResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAE016FAC48F00093C2F /* QuayboardResources-Info.plist */; };
@@ -42,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A12A19C71724D74F00916ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183291016FA992C00C515B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1A0BA6216FAB42200093C2F;
+			remoteInfo = QuayboardResources;
+		};
 		A183292F16FA992C00C515B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A183291016FA992C00C515B6 /* Project object */;
@@ -116,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A0BA6516FAB42200093C2F /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +276,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A12A19C81724D74F00916ED4 /* PBXTargetDependency */,
 			);
 			name = libQuayboard.a;
 			productName = JSMQuayboard;
@@ -435,6 +441,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A12A19C81724D74F00916ED4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1A0BA6216FAB42200093C2F /* QuayboardResources */;
+			targetProxy = A12A19C71724D74F00916ED4 /* PBXContainerItemProxy */;
+		};
 		A183293016FA992C00C515B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A183291716FA992C00C515B6 /* libQuayboard.a */;
@@ -576,6 +587,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -596,6 +608,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
