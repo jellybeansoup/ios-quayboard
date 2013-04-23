@@ -50,13 +50,6 @@
 			remoteGlobalIDString = A183291816FA992C00C515B6;
 			remoteInfo = Quayboard;
 		};
-		A1D577A816FAA87F003FB2B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1D577A116FAA87F003FB2B7 /* Quayboard.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A183292916FA992C00C515B6;
-			remoteInfo = QuayboardTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -154,7 +147,6 @@
 			children = (
 				A1D577A716FAA87F003FB2B7 /* libQuayboard.a */,
 				A1A0BAB316FAB4DF00093C2F /* QuayboardResources.bundle */,
-				A1D577A916FAA87F003FB2B7 /* JSMQuayboardTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,7 +209,8 @@
 		A1A0BAB316FAB4DF00093C2F /* QuayboardResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = QuayboardResources.bundle;
+			name = QuayboardResources.bundle;
+			path = "Quayboard Resources.bundle";
 			remoteRef = A1A0BAB216FAB4DF00093C2F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -226,14 +219,6 @@
 			fileType = archive.ar;
 			path = libQuayboard.a;
 			remoteRef = A1D577A616FAA87F003FB2B7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1D577A916FAA87F003FB2B7 /* JSMQuayboardTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			name = JSMQuayboardTests.octest;
-			path = QuayboardTests.octest;
-			remoteRef = A1D577A816FAA87F003FB2B7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

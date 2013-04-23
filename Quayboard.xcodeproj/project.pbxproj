@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A1A2EDAA17260654006FCE13 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A1A2EDAB17260654006FCE13 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				A1A2EDAE17260658006FCE13 /* Generate Documentation */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = "Quayboard Documentation";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A110216616FAD62400051A91 /* keyBackgroundPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215616FAD62400051A91 /* keyBackgroundPad.png */; };
 		A110216716FAD62400051A91 /* keyBackgroundPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110215716FAD62400051A91 /* keyBackgroundPad@2x.png */; };
@@ -23,16 +37,9 @@
 		A110217316FAD62400051A91 /* keyboardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216316FAD62400051A91 /* keyboardBackground@2x.png */; };
 		A110217416FAD62400051A91 /* keyboardBackgroundPad.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216416FAD62400051A91 /* keyboardBackgroundPad.png */; };
 		A110217516FAD62400051A91 /* keyboardBackgroundPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A110216516FAD62400051A91 /* keyboardBackgroundPad@2x.png */; };
-		A183292B16FA992C00C515B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183292A16FA992C00C515B6 /* SenTestingKit.framework */; };
-		A183292E16FA992C00C515B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291B16FA992C00C515B6 /* Foundation.framework */; };
 		A183298A16FAA0F500C515B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291B16FA992C00C515B6 /* Foundation.framework */; };
 		A183298B16FAA0F500C515B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A183298816FAA0D200C515B6 /* UIKit.framework */; };
-		A183299116FAA20600C515B6 /* libQuayboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A183291816FA992C00C515B6 /* libQuayboard.a */; };
 		A18E9D0116FAAD6000DFC9F4 /* Quayboard_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */; };
-		A1A0BAD516FAC45C00093C2F /* QuayboardTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */; };
-		A1A0BAD816FAC46800093C2F /* QuayboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BAD716FAC46800093C2F /* QuayboardTests.m */; };
-		A1A0BAE216FAC48F00093C2F /* QuayboardResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BAE016FAC48F00093C2F /* QuayboardResources-Info.plist */; };
-		A1AA3C1416FAC71300F81C4E /* QuayboardResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */; };
 		A1AA3C1516FAC92600F81C4E /* Quayboard.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0BADD16FAC47500093C2F /* Quayboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1AA3C1616FAC92600F81C4E /* JSMQuayboardBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A0BAD916FAC47500093C2F /* JSMQuayboardBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1AA3C1716FAC92600F81C4E /* JSMQuayboardBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BADA16FAC47500093C2F /* JSMQuayboardBar.m */; };
@@ -47,13 +54,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A1A0BA6216FAB42200093C2F;
 			remoteInfo = QuayboardResources;
-		};
-		A183292F16FA992C00C515B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A183291016FA992C00C515B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A183291716FA992C00C515B6;
-			remoteInfo = JSMQuayboard;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -79,16 +79,12 @@
 		A128D98717024881008ADB48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A183291816FA992C00C515B6 /* libQuayboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuayboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A183291B16FA992C00C515B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JSMQuayboardTests.octest; path = QuayboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A183292A16FA992C00C515B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A183298816FAA0D200C515B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1881256171AE2C80024B28F /* Quayboard.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quayboard.podspec; sourceTree = "<group>"; };
 		A18E9D0016FAAD6000DFC9F4 /* Quayboard_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quayboard_Prefix.pch; sourceTree = SOURCE_ROOT; };
-		A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuayboardResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = QuayboardResources.bundle; path = "Quayboard Resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0BA6416FAB42200093C2F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "QuayboardTests-Info.plist"; path = "src/QuayboardTests/QuayboardTests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		A1A0BAD616FAC46800093C2F /* QuayboardTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuayboardTests.h; path = src/QuayboardTests/QuayboardTests.h; sourceTree = SOURCE_ROOT; };
-		A1A0BAD716FAC46800093C2F /* QuayboardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuayboardTests.m; path = src/QuayboardTests/QuayboardTests.m; sourceTree = SOURCE_ROOT; };
 		A1A0BAD916FAC47500093C2F /* JSMQuayboardBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSMQuayboardBar.h; path = src/Quayboard/JSMQuayboardBar.h; sourceTree = SOURCE_ROOT; };
 		A1A0BADA16FAC47500093C2F /* JSMQuayboardBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSMQuayboardBar.m; path = src/Quayboard/JSMQuayboardBar.m; sourceTree = SOURCE_ROOT; };
 		A1A0BADB16FAC47500093C2F /* JSMQuayboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSMQuayboardButton.h; path = src/Quayboard/JSMQuayboardButton.h; sourceTree = SOURCE_ROOT; };
@@ -108,16 +104,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A183292516FA992C00C515B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A183292B16FA992C00C515B6 /* SenTestingKit.framework in Frameworks */,
-				A183292E16FA992C00C515B6 /* Foundation.framework in Frameworks */,
-				A183299116FAA20600C515B6 /* libQuayboard.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A1A0BA6016FAB42200093C2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				A183291D16FA992C00C515B6 /* Quayboard */,
-				A183293216FA992C00C515B6 /* QuayboardTests */,
 				A1A0BA6616FAB42200093C2F /* QuayboardResources */,
 				A183291A16FA992C00C515B6 /* Frameworks */,
 				A1A0BAB016FAB4CD00093C2F /* Supporting Files */,
@@ -147,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				A183291816FA992C00C515B6 /* libQuayboard.a */,
-				A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */,
 				A1A0BA6316FAB42200093C2F /* QuayboardResources.bundle */,
 			);
 			name = Products;
@@ -175,25 +159,6 @@
 			);
 			name = Quayboard;
 			path = JSMQuayboard;
-			sourceTree = "<group>";
-		};
-		A183293216FA992C00C515B6 /* QuayboardTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1A0BAD616FAC46800093C2F /* QuayboardTests.h */,
-				A1A0BAD716FAC46800093C2F /* QuayboardTests.m */,
-				A183293316FA992C00C515B6 /* Supporting Files */,
-			);
-			name = QuayboardTests;
-			path = JSMQuayboardTests;
-			sourceTree = "<group>";
-		};
-		A183293316FA992C00C515B6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1A0BAD416FAC45C00093C2F /* QuayboardTests-Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A18E9D0216FAAD6C00DFC9F4 /* Resources */ = {
@@ -264,43 +229,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A183291716FA992C00C515B6 /* libQuayboard.a */ = {
+		A183291716FA992C00C515B6 /* Quayboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "libQuayboard.a" */;
+			buildConfigurationList = A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "Quayboard" */;
 			buildPhases = (
 				A183291416FA992C00C515B6 /* Sources */,
 				A183291516FA992C00C515B6 /* Frameworks */,
 				A183298416FAA0A900C515B6 /* Headers */,
-				A1047EBD1719464100B5A783 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A12A19C81724D74F00916ED4 /* PBXTargetDependency */,
 			);
-			name = libQuayboard.a;
+			name = Quayboard;
 			productName = JSMQuayboard;
 			productReference = A183291816FA992C00C515B6 /* libQuayboard.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		A183292816FA992C00C515B6 /* QuayboardTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A183294016FA992C00C515B6 /* Build configuration list for PBXNativeTarget "QuayboardTests" */;
-			buildPhases = (
-				A183292416FA992C00C515B6 /* Sources */,
-				A183292516FA992C00C515B6 /* Frameworks */,
-				A183292616FA992C00C515B6 /* Resources */,
-				A183292716FA992C00C515B6 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A183293016FA992C00C515B6 /* PBXTargetDependency */,
-			);
-			name = QuayboardTests;
-			productName = JSMQuayboardTests;
-			productReference = A183292916FA992C00C515B6 /* JSMQuayboardTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 		A1A0BA6216FAB42200093C2F /* QuayboardResources */ = {
 			isa = PBXNativeTarget;
@@ -341,24 +286,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A183291716FA992C00C515B6 /* libQuayboard.a */,
+				A183291716FA992C00C515B6 /* Quayboard */,
 				A1A0BA6216FAB42200093C2F /* QuayboardResources */,
-				A183292816FA992C00C515B6 /* QuayboardTests */,
+				A1A2EDAA17260654006FCE13 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A183292616FA992C00C515B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1A0BAD516FAC45C00093C2F /* QuayboardTests-Info.plist in Resources */,
-				A1A0BAE216FAC48F00093C2F /* QuayboardResources-Info.plist in Resources */,
-				A1AA3C1416FAC71300F81C4E /* QuayboardResources.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A1A0BA6116FAB42200093C2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,31 +320,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A1047EBD1719464100B5A783 /* ShellScript */ = {
+		A1A2EDAE17260658006FCE13 /* Generate Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Generate Documentation";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
-		};
-		A183292716FA992C00C515B6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "/usr/local/bin/appledoc \\\n  --ignore example \\\n  --ignore .m \\\n  --create-html \\\n  --create-docset \\\n  --install-docset \\\n  --keep-intermediate-files \\\n  --project-name \"Quayboard\" \\\n  --project-company \"JellyStyle Media\" \\\n  --company-id \"com.jellystyle\" \\\n  --docset-platform-family \"iphoneos\" \\\n  --merge-categories \\\n  --no-repeat-first-par \\\n  --warn-undocumented-object \\\n  --warn-undocumented-member \\\n  --warn-empty-description \\\n  --warn-unknown-directive \\\n  --warn-invalid-crossref \\\n  --warn-missing-arg \\\n  --logformat xcode \\\n  --exit-threshold 2 \\\n  --output \"docs\" \\\n  \"${SRCROOT}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -420,14 +343,6 @@
 			files = (
 				A1AA3C1716FAC92600F81C4E /* JSMQuayboardBar.m in Sources */,
 				A1AA3C1916FAC92600F81C4E /* JSMQuayboardButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A183292416FA992C00C515B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1A0BAD816FAC46800093C2F /* QuayboardTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +360,6 @@
 			isa = PBXTargetDependency;
 			target = A1A0BA6216FAB42200093C2F /* QuayboardResources */;
 			targetProxy = A12A19C71724D74F00916ED4 /* PBXContainerItemProxy */;
-		};
-		A183293016FA992C00C515B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A183291716FA992C00C515B6 /* libQuayboard.a */;
-			targetProxy = A183292F16FA992C00C515B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -542,36 +452,6 @@
 			};
 			name = Release;
 		};
-		A183294116FA992C00C515B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSMQuayboard/JSMQuayboard-Prefix.pch";
-				INFOPLIST_FILE = "JSMQuayboardTests/JSMQuayboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		A183294216FA992C00C515B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JSMQuayboard/JSMQuayboard-Prefix.pch";
-				INFOPLIST_FILE = "JSMQuayboardTests/JSMQuayboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		A1A0BA6E16FAB42200093C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -613,6 +493,20 @@
 			};
 			name = Release;
 		};
+		A1A2EDAC17260654006FCE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1A2EDAD17260654006FCE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -625,20 +519,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "libQuayboard.a" */ = {
+		A183293D16FA992C00C515B6 /* Build configuration list for PBXNativeTarget "Quayboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A183293E16FA992C00C515B6 /* Debug */,
 				A183293F16FA992C00C515B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A183294016FA992C00C515B6 /* Build configuration list for PBXNativeTarget "QuayboardTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A183294116FA992C00C515B6 /* Debug */,
-				A183294216FA992C00C515B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -648,6 +533,15 @@
 			buildConfigurations = (
 				A1A0BA6E16FAB42200093C2F /* Debug */,
 				A1A0BA6F16FAB42200093C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A2EDAB17260654006FCE13 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A2EDAC17260654006FCE13 /* Debug */,
+				A1A2EDAD17260654006FCE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
