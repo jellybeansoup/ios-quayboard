@@ -20,7 +20,7 @@ This method is demonstrated in the included example project (example/QuayboardEx
 
 4. Expand the Quayboard subproject and drag the `QuayboardResources.bundle` into your 'Copy Bundle Resources' build phase.
 
-5. Under the Build Settings tab of you Project's target, do a search for 'Header Search Paths'. Add the path to the `/src/Quayboard/` folder of the Quayboard project. This should look something like `"$(SRCROOT)/../src/Quayboard/"`, replaceing the `..` with the relative path from your project to the Quayboard project.
+5. Under the Build Settings tab of you Project's target, do a search for 'Header Search Paths'. Add the path to the `/src/Quayboard/` folder of the Quayboard project. This should look something like `"$(SRCROOT)/../src/Quayboard/"`, replacing the `..` with the relative path from your project to the Quayboard project.
 
 6. Build your project (⌘B). All going well you should get a 'Build Succeeded' notification. This signifies that you're ready to implement Quayboard in your project.
 
